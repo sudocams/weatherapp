@@ -22,11 +22,11 @@ app.get('/', (req, res)=>{
 
 app.get('/about', (req, res)=>{
     res.render('about',
-     {title:'about page', name: 'about here'})
+     {title:'about page', name: 'camlus'})
 })
 app.get('/help', (req, res)=>{
     res.render('help', 
-    {title:'help page', name: 'will here will have mor info'})
+    {title:'help page', name: 'camlus'})
 })
 
 app.get('/weather', (req, res)=>{
