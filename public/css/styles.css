@@ -3,24 +3,20 @@ body{
     color: #333333;
     margin-top: 15;
     font-family: arial;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 0 16px;
+    max-width: 1600px;
 
     display: flex;
     flex-direction: column;
     min-height: 100vh;  
 }
 
-footer{
-    background-color:#888888;
-    border-top: 1px solid #eeeeee;
-    padding: 30px;
-    margin-top: 16px 0;
-
+.images{
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .header{
+    text-align: center;
     margin-top: 16px;
     margin-bottom: 10px;
 }
@@ -38,8 +34,31 @@ h3{
 }
 
 img{
-    width: 250px;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-top-left-radius: 100%;
+    -webkit-border-top-left-radius: 100px;
+    -moz-border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    -webkit-border-bottom-right-radius: 100px;
+    -moz-border-bottom-right-radius: 100px;
+
 }
+.main-content .para{
+    text-align: center
+}
+
+div.form {
+    display: block;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 50%;
+}
+
+
 
 .main-content{
     flex-grow: 1;
@@ -52,9 +71,93 @@ input{
     margin-bottom:5px;
 }
 
-button{
+.btn{
     cursor: pointer;
     border: #888888;
     background-color: #888888;
     padding: 8px;
+}
+
+.footer{
+    background-color:#303036;
+    color: #d3d3d3;
+    width: 100% !important;
+    padding-top: 5px;
+    height: 300px;
+    position: relative;
+
+}
+
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.footer .footer-content{
+    height: 250px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 10px;
+}
+
+.footer .footer-content h4{
+    color: white;
+}
+
+.footer .footer-content .about h4 span{
+    color: #05f7ff;
+}
+
+.footer .footer-content .contact span{
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.footer .footer-content .about .socials a{
+    border: 1px solid gray;
+    padding-top: 5px;
+    height: 45px;
+    margin-right: 8px;
+    text-align: center;
+    display: inline;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+.footer .footer-content .about .socials a:hover{
+    color: white;
+    transition: all .3s;
+}
+.footer .footer-content .links ul a{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+.footer .footer-content .links ul a:hover{
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+.footer .footer-content .contact-form .contact-input{
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding:  .9rem 1,2rem;
+    border: none;
+}
+.footer .footer-content .contact-form .contact-input:focus{
+    background: #1a1a1a;
 }
